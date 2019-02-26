@@ -532,7 +532,7 @@ if (args[0]) {
 }
 
 if (!cfg.authDomain)
-    cfg.authDomain = "http://localhost:3000"
+    cfg.authDomain = "http://0.0.0.0:3000"
 
 if (!cfg.serviceName)
     cfg.serviceName = "GITwed"
