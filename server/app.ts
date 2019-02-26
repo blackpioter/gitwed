@@ -626,8 +626,8 @@ gitfs.initAsync(cfg)
         setupFinalRoutes()
 
         if (cfg.justDir || cfg.proxy) {
-            winston.info(`listen on http://localhost:${port}`)
-            app.listen(port, "localhost")
+            winston.info(`listen on http://0.0.0.0:${port}`)
+            app.listen(port)
         } else {
             if (cfg.production) {
                 winston.info(`setup certs`)
